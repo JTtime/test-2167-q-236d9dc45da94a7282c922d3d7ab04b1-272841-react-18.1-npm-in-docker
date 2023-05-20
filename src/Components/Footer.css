@@ -1,0 +1,56 @@
+{
+        /*container as flex*/
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: 0rem;
+        left: 0;
+        width: 100%;
+        background-color: #ccc;
+    }
+
+        {
+        /* container as grid*/
+    }
+
+    
+
+    .tabs {
+        display: flex;
+        justify-content: space-between;
+        background-color: #ccc;
+        padding: 10px;
+    }
+
+    .tab {
+        padding: 8px 16px;
+        background-color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    .tab.active {
+        background-color: #f0f0f0;
+    }
+
+    .content {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .contentGrid {
+        display: grid;
+        grid-template-columns: 50% 15% 15% 20%;
+    }
+
+    .tab-content {
+        display: none;
+    }
+
+    .tab-content.active {
+        display: block;
+    }
